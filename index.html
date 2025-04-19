@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardingUC - Buy UC for BGMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CardingUC - Buy BGMI UC Instantly</h1>
+            <p>Just enter your BGMI ID and choose your UC pack</p>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="form-container">
+            <label for="bgmi-id">Enter Your BGMI ID:</label>
+            <input type="text" id="bgmi-id" placeholder="Enter your BGMI ID">
+            <button id="fetch-username">Fetch Username</button>
+            <p id="username-output"></p>
+
+            <label for="uc-pack">Choose UC Pack:</label>
+            <select id="uc-pack">
+                <option value="60">60 UC - ₹59</option>
+                <option value="300">300 UC - ₹299</option>
+                <option value="600">600 UC - ₹589</option>
+                <option value="1800">1800 UC - ₹1749</option>
+                <option value="3850">3850 UC - ₹3599</option>
+            </select>
+
+            <button id="buy-now">Buy Now</button>
+        </div>
+
+        <div id="payment-info" class="hidden">
+            <h3>Pay via UPI</h3>
+            <p>UPI ID: digimrkt@ibl</p>
+            <label for="screenshot">Upload Payment Screenshot:</label>
+            <input type="file" id="screenshot">
+            <button id="submit-payment">Submit Payment</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Need Help? <a href="https://t.me/yourusername" target="_blank">Contact us on Telegram</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
